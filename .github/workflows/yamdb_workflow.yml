@@ -50,6 +50,7 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 
         with:
+          context: api_yamdb/
           push: true
           tags: alexmarkson/python_yatube_db:v1.0.0
           file: api_yamdb/Dockerfile
